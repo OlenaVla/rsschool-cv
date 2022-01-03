@@ -12,15 +12,56 @@
           <img class="avatar" src="i01_FotoCV.png" alt="Photo">
           <h1 class="name">Elena Vlasenko</h1>
           <nav>
-            <a class="nav-item" href="#">About</a>
-            <a class="nav-item" href="#">Skills</a>
-            <a class="nav-item" href="#">Education</a>
-            <a class="nav-item" href="#">Languages</a>
-            <a class="nav-item" href="#">Code</a>
+            <a class="nav-item" href="#about">About</a>
+            <a class="nav-item" href="#skills">Skills</a>
+            <a class="nav-item" href="#education">Education</a>
+            <a class="nav-item" href="#languages">Languages</a>
+            <a class="nav-item" href="#code">Code</a>
           </nav>
        </header>
-       <hr>
-       <main>
+       <main class="main">
+           <div class="Contacts">
+             <h2>Contacts</h2>
+             <p>Address: Ukraine, Dnipro</p>
+             <p>Phone: +380952475756</p>
+             <p>Email: evlasenko409@gmail.com</p>
+           </div>
+           <div class="Content">
+            <h2 id="about">About Me</h2>
+            <p>I have an experience in software testing, support and development of legacy project.
+               I am a relible team player, hardworking and responsible.
+               I like to study and want to test myself in a new area - Front End development.
+            </p>
+            <h2 id="education">Education</h2>
+            <p>Specialist of Applied Mathematics</p>
+            <p>Dnipropetrovsk National University</p>
+            <h2 id="languages">Languages</h2>
+            <ul>
+                <li>Russian - native</li>
+                <li>Ukrainian - native</li>
+                <li>English - intermediate</li>
+            </ul>    
+            <h2 id="skills">Skills</h2>
+            <ul>
+                <li>C/C++</li>
+                <li>SQL</li>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Visual Studio, VS Code</li>
+                <li>Windows, Unix, Linux</li>
+            </ul>
+            <h2 id="code">Code Example</h2>
+            <pre>
+                function playerWin(name, bDraw = false)
+                {
+                    const $winTitle = document.createElement('div');
+                    $winTitle.classList.add('winTitle');
+                    $arenas.appendChild($winTitle);
+                    $randomButton.remove();
+                    $winTitle.innerText = (bDraw === true) ? 'Draw' : name + ' wins';
+                }       
+            </pre>
+           </div>
        </main>
        <footer>
        </footer>
