@@ -1,18 +1,91 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>CV</title>
     <meta name="description" content="Elena Vlasenko CV"/>
-  
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
   </head>
   <body>
-    <header>
-    </header>
-    <main>
-    </main>
-    <footer>
-    </footer>
+     <div class="container"> 
+        <header class="header">
+          <img class="avatar" src="./img/i01_FotoCV.png" alt="Photo">
+          <div class="name-block">
+            <h1 class="name">Elena Vlasenko</h1>
+            <p>RS School Student</p>
+            <p>JavaScript/Front-End Course</p>
+          </div>
+          <div id="contacts">
+            <h2>Contacts</h2>
+            <p>Address: Ukraine, Dnipro</p>
+            <p>Phone: +380952475756</p>
+            <p>Email: evlasenko409@gmail.com</p>
+          </div>
+       </header>
+       <main class="main">
+         <nav class="navigator">
+            <a class="nav-item" href="#about">About</a>
+            <a class="nav-item" href="#skills">Skills</a>
+            <a class="nav-item" href="#education">Education</a>
+            <a class="nav-item" href="#languages">Languages</a>
+            <a class="nav-item" href="#work">Work Experience</a>
+            <a class="nav-item" href="#code">Code</a>
+            <a class="nav-item" href="#projects">Projects</a>
+            <a class="nav-item" href="#contacts">Contacts</a>
+         </nav>
+           <div class="Content">
+             <h2 id="about">About Me</h2>
+             <p>I have some experience in software testing, support and development of desktop project.</p>
+             <p>I am a relible team player, hardworking and responsible.</p>
+             <p>I like to study and want to test myself in a new field - Front End development.</p>
+             <h2 id="education">Education</h2>
+             <p>Specialist of Applied Mathematics</p>
+             <p>Dnipropetrovsk National University</p>
+             <h2 id="languages">Languages</h2>
+             <ul>
+               <li>Russian - native</li>
+               <li>Ukrainian - native</li>
+               <li>English - intermediate</li>
+             </ul>    
+             <h2 id="skills">Skills</h2>
+             <ul>
+               <li>C/C++</li>
+               <li>SQL</li>
+               <li>HTML/CSS</li>
+               <li>JavaScript</li>
+               <li>Visual Studio, VS Code</li>
+               <li>Windows, Unix, Linux</li>
+             </ul>
+             <h2 id="work">Work Experience</h2>
+             <p>Senior QA: manual and automated unit testing, test cases development</p>
+             <p>Junior, Middle C++ developer: software development and support of desktop application</p>
+             <h2 id="code">Code Example</h2>
+             <div>
+               <pre>
+               function playerWin(name, bDraw = false)
+               {
+                 const $winTitle = document.createElement('div');
+                 $winTitle.classList.add('winTitle');
+                 $arenas.appendChild($winTitle);
+                 $randomButton.remove();
+                 $winTitle.innerText = (bDraw === true) ? 'Draw' : name + ' wins';
+               }       
+              </pre>
+            </div>
+            <h2 id="projects">Projects</h2>
+            <p>Current project: <a href="https://olenavla.github.io/rsschool-cv/">CV</a></p>
+        </div>
+       </main>
+       <footer class="footer-block">
+         <h3 class="footer-item">Created in 2022</h3>
+         <a class="footer-item github-icon fa fa-github fa-3x" href="https://github.com/OlenaVla/" target="_blank"></a>
+         <p class="footer-item footer-rs">
+           <a href="https://rs.school/js/" target="_blank">
+             <img class="rs-image" src="https://rs.school/images/rs_school_js.svg" alt="RS School icon"/>
+           </a>
+         </p>
+       </footer>
+     </div>
   </body>
 </html>
