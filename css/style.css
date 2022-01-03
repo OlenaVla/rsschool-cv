@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: rgba(95, 214, 208, 0.3);
+  box-shadow: 10px 10px 40px -1px rgb(0 0 0 / 25%);    
+}
+
+.header {
+  display: flex;
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(140, 240, 235, 0.5); ;
+  border: 3px solid lightseagreen;
+  border-top:none;
+  border-right: none;
+  border-left: none;
+}
+
+.avatar {
+  border: 3px solid lightseagreen;
+  border-radius: 30%;
+  margin: 0;
+}
+
+.name{
+  padding: 10px;
+  font-size: 48px;
+}
+
+.name-block{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 10px;
+}
+
+.name-block p{
+  font-size: 36px;
+  padding: 0 10px;
+}
+
+.navigator{
+  margin: 25px 0;
+}
+.nav-item{
+  display: block;
+  margin: 35px 20px 35px 10px;
+  color: lightseagreen;
+  font-weight: bold; 
+}
+
+.main{
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+h2{
+  border: 2px solid lightseagreen;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: 25px 10px 15px 0;
+}
+
+#contacts{
+  margin: 10px 10px;
+  padding: 20px 5px;
+}
+
+.Content{
+  flex-grow: 1;
+}
+
+.footer-block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20%;
+  margin: 10px 0;
+  background-color: rgba(37, 39, 41, 0.5);
+}
+
+.footer-item{
+  margin: 10px 10px;
+}
+
+.rs-image{
+  width: 90px;
+  height: 90%;
+}
+.github-icon{
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
