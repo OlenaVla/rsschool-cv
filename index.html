@@ -5,33 +5,35 @@
     <title>CV</title>
     <meta name="description" content="Elena Vlasenko CV"/>
     <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   </head>
   <body>
      <div class="container"> 
         <header class="header">
           <img class="avatar" src="i01_FotoCV.png" alt="Photo">
           <h1 class="name">Elena Vlasenko</h1>
-          <nav>
+          <div id="contacts">
+            <h2>Contacts</h2>
+            <p>Address: Ukraine, Dnipro</p>
+            <p>Phone: +380952475756</p>
+            <p>Email: evlasenko409@gmail.com</p>
+          </div>
+       </header>
+       <main class="main">
+        <nav class="navigator">
             <a class="nav-item" href="#about">About</a>
+            <a class="nav-item" href="#contacts">Contacts</a>
             <a class="nav-item" href="#skills">Skills</a>
             <a class="nav-item" href="#education">Education</a>
             <a class="nav-item" href="#languages">Languages</a>
+            <a class="nav-item" href="#work">Work Experience</a>
             <a class="nav-item" href="#code">Code</a>
           </nav>
-       </header>
-       <main class="main">
-           <div class="Contacts">
-             <h2>Contacts</h2>
-             <p>Address: Ukraine, Dnipro</p>
-             <p>Phone: +380952475756</p>
-             <p>Email: evlasenko409@gmail.com</p>
-           </div>
            <div class="Content">
             <h2 id="about">About Me</h2>
-            <p>I have an experience in software testing, support and development of legacy project.
-               I am a relible team player, hardworking and responsible.
-               I like to study and want to test myself in a new area - Front End development.
-            </p>
+            <p>I have an experience in software testing, support and development of desktop project.</p>
+            <p>I am a relible team player, hardworking and responsible.</p>
+            <p>I like to study and want to test myself in a new field - Front End development.</p>
             <h2 id="education">Education</h2>
             <p>Specialist of Applied Mathematics</p>
             <p>Dnipropetrovsk National University</p>
@@ -50,6 +52,9 @@
                 <li>Visual Studio, VS Code</li>
                 <li>Windows, Unix, Linux</li>
             </ul>
+            <h2 id="work">Work Experience</h2>
+            <p>Senior QA : manual and automated unit testing, test cases development, tutoring of newcomers</p>
+            <p>Junior, Middle C++ developer : software development and support of desktop application</p>
             <h2 id="code">Code Example</h2>
             <pre>
                 function playerWin(name, bDraw = false)
@@ -63,8 +68,14 @@
             </pre>
            </div>
        </main>
-       <footer>
-       </footer>
+       <footer class="footer-block">
+           <h3 class="footer-item">Created in 2022</h3>
+           <a href="https://github.com/OlenaVla/" target="_blank" class="footer-item github-icon fa fa-github fa-3x"></a>
+           <p class="footer-item footer-rs">
+              <a href="https://rs.school/js/" target="_blank">
+                <img src="https://rs.school/images/rs_school_js.svg" alt="RS School icon" class="rs-image">
+              </a></p>
+        </footer>
      </div>
   </body>
 </html>
